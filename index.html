@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sederhana</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+        }
+
+        .sejarah-text {
+            display: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .sejarah-text {
+            border: 1px solid #ccc;
+            background: whitesmoke;
+            height: auto;
+            width: auto;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 style="font-weight: bold;">SEJARAH SEJARAH MAKANAN</h1>
+            <p>Makanan Favoritmu Pasti Memiliki Sejarah yang Menarik!</p>
+            <select id="pilihan_makanan" class="form-select" aria-label="Default select example">
+                <option value="" selected>Pilih Sejarah Makanan Favoritmu</option>
+                <option value="NasiGoreng">Nasi Goreng</option>
+                <option value="MieAyam">Mie Ayam</option>
+                <option value="Baso">Baso</option>
+            </select>
+            <button id="tombol_lihat" class="btn btn-primary mt-2" onclick="tampilkanSejarah()">Lihat</button>
+    </div>
+
+    <div class="container mt-3">
+        <h2 id="judul_hasil" class="mt-4"></h2>
+            <p id="NasiGoreng" class="sejarah-text">
+                Nasi goreng memiliki awal yang sama dengan versi nasi goreng lainnya; sebagai cara untuk menghindari pemborosan nasi.
+                Menggoreng nasi dapat mencegah penyebaran kuman, bakteri, mikroba berbahaya, terutama dalam teknologi pra-pembekuan di
+                Indonesia dan juga menghindari kebutuhan untuk membuang makanan yang berharga. Nasi goreng secara tradisional disajikan
+                di rumah untuk sarapan dan secara tradisional dibuat dari nasi sisa dari malam sebelumnya. Selain bahan-bahan seperti
+                bawang merah, bawang putih, tomat, paprika dan cabai, nasi goreng dengan potongan daging ayam atau sapi; biasanya sisa
+                dari masakan daging ayam atau sapi.
+                <br><br>
+                Nasi goreng sering digambarkan sebagai modifikasi nasi goreng Indonesia dan dengan resep nasi goreng lainnya di Asia,
+                telah disarankan untuk melacak asal-usulnya dari nasi goreng Tiongkok Selatan. Namun, tidak jelas kapan Indonesia mulai
+                menerima nasi goreng Tiongkok dan membuat versi mereka sendiri. Perdagangan antara Tiongkok dan Kepulauan Indonesia
+                berkembang sejak zaman Kerajaan Sriwijaya sekitar abad ke-10 dan semakin intensif pada zaman Kerajaan Majapahit sekitar
+                abad ke-15. Pada saat itu para imigran Tiongkok mulai menetap di Kepulauan Nusantara, membawa serta budaya dan masakan
+                mereka. Orang Tionghoa biasanya mendukung makanan panas yang baru dimasak, dan dalam budaya mereka adalah tabu untuk
+                membuang bahan makanan yang belum dimakan. Akibatnya, nasi sisa hari sebelumnya sering dimasak kembali di pagi hari.
+                Dahulu, Indonesia mungkin hanya nasi sisa yang dijemur untuk membuat intip atau rengginang (kerupuk nasi), nasi kering
+                juga bisa digiling untuk membuat tepung beras.
+                <br><br>
+                nasi goreng sebenarnya terinspirasi oleh sebuah hidangan Timur Tengah yang disebut Pilaf, yaitu nasi yang dimasak dengan
+                kuah kaldu yang dibumbui. Saran ini cukup masuk akal dalam kaitannya dengan varian tertentu, yaitu nasi goreng kambing
+                Betawi, yang menggunakan daging kambing (biasanya disukai oleh orang Arab-Indonesia), rempah-rempah yang kaya dan minyak
+                Samin (minyak lemak daging sapi), yang menunjukkan pengaruh Timur Tengah.
+                <br><br>
+                Nasi goreng dianggap sebagai bagian dari budaya India. Penyebutan nasi goreng muncul dalam kesusastraan kolonial Hindia
+                Belanda, seperti dalam cerita murid Hidjo karya Marco Kartodikoromo, yang dimuat di surat kabar Sinar Hindia tahun 1918.
+                Disebutkan dalam buku masak Belanda tahun 1925 Groot Nieuw Vollemenggali Oost Indisch Kookbook. Perdagangan antara
+                Belanda dan Hindia Belanda pada saat itu telah meningkatkan popularitas nasi goreng ke dunia.
+                <br><br>
+                Setelah Indonesia merdeka, nasi goreng dianggap sebagai hidangan Nasional, meski secara tidak resmi. Itu ada di menu
+                yang diperkenalkan, ditawarkan dan disajikan di Restoran Teater Indonesia 1964 di dalam paviliun Indonesia di pameran
+                dunia New York. Howard Palfrey Jones, Duta Besar AS untuk Indonesia pada tahun terakhir pemerintahan Ir. Soekarno pada
+                pertengahan dasawarsa 1960-an, dalam memoarnya “Indonesia: a dream possible”, mengatakan bahwa dia seperti nasi goreng.
+                Dia menggambarkan keberaniannya untuk nasi goreng yang dimasak oleh Hartini, salah satu istri dari Soekarno, dan
+                memujinya sebagai nasi goreng paling enak yang pernah dia rasakan.
+            </p>
+
+            <p id="MieAyam" class="sejarah-text">
+                Mie ayam adalah hidangan khas Indonesia yang terbuat dari mi gandum yang dibumbui dengan potongan daging ayam.
+                Hidangan ini banyak terpengaruh dengan teknik penyajian kuliner yang digunakan dalam hidangan Tionghoa. Di
+                Indonesia, mie ayam merupakan hidangan Tionghoa-Indonesia yang sangat terkenal. Mie ayam sering dijual sebagai hidangan
+                sederhana yang dibuat oleh pedagang kaki lima dengan gerobak, yang biasanya berkeliling di jalan-jalan sekitar perumahan
+                warga. Mie ayam juga merupakan hidangan populer yang disajikan di warung makan kecil pinggir jalan, hingga rumah makan
+                besar.
+                <br><br>
+                Pada awalnya sejarah penemuan mi instan berasal dari Tiongkok, pada tahun 2005 ditemukan penemuan mi berusia 400 tahun
+                yang terkubur sedalam 3 meter. Penemuan ini meyakini bahwa mi pertama kali ditemukan oleh penduduk Tiongkok. Pada
+                awalnya mi di produksi secara manual, kemudian tahun 700-an sejarah mencatat maisn pembuat mi yang kemudian diproduksi
+                secara besar pada tahun 1854. Semenjak itu perkembangan mi semakin pesat, seperti di Tiongkok yang pertama diproduksi
+                dengan nama chikin ramen dan di Jepang dinamai Saparo ramen.
+                <br><br>
+                Menurut catatan sejarah mi telah ada di Tiongkok sejak 400 tahun yang lalau, yaitu pada masa dinasti Han, di Eropa mi
+                dikenal pada saat Marcopolo berkunjung ke Tiongkok dan membawa oleh-oleh mi. Seiring berkembangnya zaman di Eropa mi
+                berubah menjadi seperti pasta. Salah satu olahan mi yang banyak dikenal adalah mi ayam, yang merupakan makan khas dari
+                beberapa negara seperti Indonesia dan Tiongkok. Namun, penyebutan nama di kedua negara tersebut berbeda, di Tiongkok
+                olahan mi tersebut diberi nama bakmi, sedangkan di Indonesia di sebut mi ayam. Mi ayam yang pada awalnya adalah bakmi,
+                yang kemudian di modifikasi untuk menyesuaikan lidah masyarakat Indonesia. Penyebaran mi ayam di Indonesia disebabkan
+                oleh pendatang dari Tionghoa yang memutuskan untuk menetap di Indonesia, dari situlah mi ayam ini mulai menyebar dan
+                menjadi populer dikalangan masyarakat.
+            </p>
+
+            <p id="Baso" class="sejarah-text">
+                Bakso berakar dari masakan Tionghoa. Hal ini ditunjukkan dengan istilah 'bakso' yang berasal dari kata Bak-So, dalam
+                bahasa Hokkien yang secara harfiah berarti 'daging babi'. Tetapi karena mayoritas penduduk Indonesia adalah muslim, maka
+                penggunaan bahan bakso yang sebelumnya adalah babi lalu diganti dengan ayam. Lalu muncul juga banyak inovasi bahan bakso
+                yang sering kita temukan di Indonesia yakni ikan, udang, dan masih banyak lagi.
+                <br><br>
+                Kini kebanyakan penjual bakso adalah orang Jawa dari Wonogiri dan Malang. Tempat yang terkenal sebagai pusat bakso
+                adalah Solo dan Malang yang disebut Bakso Malang. Bakso Solo menjadi usaha turun-temurun dari Bakso Wonogiri karena
+                banyak anak cucu yang menetap dan membuka usaha bakso di Kota Solo dan sekitarnya, terutama daerah perkotaan yang letaknya
+                strategis di pinggir jalan raya. Bakso Solo mulai tersebar dari pulau Jawa ke wilayah-wilayah lainnya di Indonesia.
+                <br><br>
+                Bakso Solo umumnya hanya berisi bakso, mi, dan taburan bawang goreng serta seledri; sementara isian bakso Malang umumnya
+                lebih bervariasi dengan tambahan pangsit kukus atau goreng, tahu, mi kuning atau bihun, dan pelengkap lainnya. Di
+                beberapa daerah, bakso disajikan dengan pelengkap unik seperti kerupuk kulit, tahu goreng, atau siomay, yang menambah
+                kekayaan rasa dan tekstur dalam satu mangkuk. Kuah bakso Malang lebih berlemak karena berasal dari kaldu tulang dan
+                jeroan, sementara kuah bakso Solo lebih ringan.
+                <br><br>
+                Beberapa penjual bakso juga menambahkan jeroan atau tetelan sapi, meliputi babat, paru, usus, hati, limpa, dan lain-lain
+                untuk menambah citarasa dan membuat hidangan bakso semakin kaya. Hal ini sejalan dengan kebiasaan masyarakat dan sejarah
+                kuliner Nusantara yang memanfaatkan setiap bagian sapi agar tidak terbuang percuma.
+            </p>
+    </div>
+
+    <script>
+        function tampilkanSejarah() {
+            const selectElement = document.getElementById("pilihan_makanan");
+            const pilihanSaatIni = selectElement.value;
+            const semuaTeks = document.querySelectorAll(".sejarah-text");
+            const judulHasil = document.getElementById("judul_hasil");
+
+
+            semuaTeks.forEach(p => {
+                p.style.display = "none";
+            });
+
+
+            if (pilihanSaatIni === "") {
+                judulHasil.innerText = "Mohon pilih salah satu makanan.";
+            } else {
+                const teksPilihan = selectElement.options[selectElement.selectedIndex].textContent;
+                judulHasil.innerText = "Sejarah " + teksPilihan;
+
+                const elemenTeks = document.getElementById(pilihanSaatIni);
+                if (elemenTeks) {
+                    elemenTeks.style.display = "block";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
